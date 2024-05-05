@@ -10,8 +10,8 @@ altoSaxophone= {
 }
 piano = {
     'instrumentMidi':   1,         # midi piano 乐器号码
-    'lowestNote':       0,         # piano
-    'totalNote':        88         # piano. 程序将生成音符介于0~totalNote-1之间的音符，以半音为步长
+    'totalNote':        88,        # piano. 程序将生成音符介于0~totalNote-1之间的音符，以半音为步长
+    'lowestNote':       0          # piano
 }
 
 def playIn(player,score,velocity):
