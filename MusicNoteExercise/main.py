@@ -3,6 +3,7 @@ import pygame, pygame.midi, random, asyncio, math, threading
 
 #__NoteN	    = ["#A","B","C","#C","D","#D","E","F","#F","G","#G","A"]
 
+
 altoSaxophone= {
     'instrumentMidi':   65,         # midi saxophone 乐器号码
     'totalNote':        31,         # saxophone 可以吹31个音，如果不用超吹. 程序将生成音符介于0~totalNote-1之间的音符，以半音为步长
