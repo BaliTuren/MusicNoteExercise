@@ -125,6 +125,9 @@ async def main():
     playThread  = threading.Thread(target=playIn, args=(player, takefive, 1.6))
     playThread.start()
 
+    screen.fill(BKGCL); clefimg  = pygame.image.load('Saxophone_big.png'); screen.blit(clefimg, (initPoint[0]+200, initPoint[1]-300)); pygame.display.update()
+    playThread.join()
+
     # 初始音符和更新条件
     updateNote = True; FirstNote = True
     TIMER_EVENT = pygame.USEREVENT
@@ -210,7 +213,6 @@ async def main():
 
         # 更新窗口
         pygame.display.update()
-        playThread.join()
     # 退出Pygame
 
 if __name__ == '__main__':
